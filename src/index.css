@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+@import "tailwindcss";
+
+* {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.frontCard {
+  position: absolute;
+  top: 180px;
+  background: url("./images/bg-card-front.png") no-repeat center/cover ;
+  width: 320px;
+  height: 230px;
+  border-radius: 10px;
+  z-index: 20;
+}
+
+.backCard p {
+  top: 6.15rem;
+}
+
+form, .thankYou {
+  margin-top: 350px;
+}
+
+.backCard {
+  position: absolute;
+  right: 20px;
+  background: url("./images/bg-card-back.png") no-repeat center/cover ;
+  width: 320px;
+  height: 230px;
+  border-radius: 10px;
+}
+
+.btn {
+  background-color: hsl(278, 68%, 11%);
+}
+
+@media (min-width: 760px) {
+  .frontCard, .backCard {
+    height: 300px;
+    width: 500px;
+    border-radius: 20px;
+  }
+
+  .frontCard {
+    top: 20px;
+  }
+
+  .backCard {
+    right: 0;
+  }
+
+  .backCard p {
+    top: 8.3rem;
+  }
+
+  form, .thankYou {
+    margin-top: 500px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .frontCard, .backCard {
+    position: relative;
+  }
+
+  .frontCard {
+    top: 20px;
+  }
+
+  .backCard {
+    right: 0;
+  }
+
+   form, .thankYou {
+    margin-top: 0;
+  }
+
+}
+
+
+/* body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+} */
